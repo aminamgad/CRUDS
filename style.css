@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #222;
+    color: #fff;
+    font-family: system-ui;
+    /* display: flex;
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; 
+    min-height: 100vh; */
+}
+
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: #111;
+    margin: 4px 0;
+    padding: 4px;
+    border-radius: 6px;
+    color: #fff;
+}
+input:focus{
+    background: #000;
+    transform: scale(1.05);
+    transition: 0.2s linear ;
+    margin: 4px;
+}
+.price input{
+    width: 20%;
+}
+
+#total{
+    background-color: orangered;
+    padding: 4px 4px;
+    border-radius: 6px;
+}
+
+#total::before{
+    content: 'Total  : ';
+    text-transform: uppercase;
+}
+
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.03rem;
+    font-weight: bold;
+    padding: 3px 0;
+    margin: 4px ;
+    user-select: none;
+}
+button:hover{
+    transform: scale(1.02);
+    transition: 0.2s linear;
+    background: orangered;
+    color: #fff;
+    margin: 2px;
+    transition: 0.1s linear;
+}
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+}
+.btnsearch button{
+    width: 48%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+#update{
+    margin: 0 ;
+}
+#delete,#deleteAll button{
+    background: red;
+    color: #fff;
+}
+#delete:hover,#deleteAll button:hover{
+    background: #222;
+    color: red;
+    margin: 4px;
+    font-weight: bold;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
+
+#print{
+    background: cyan;
+    margin: 25px 0 0 25%;
+    width: 50%;
+    justify-content: center;
+    height: 40px;
+    border-radius: 10px 10px 0 0;
+}
+#print:hover{
+    background-color: #222;
+    color: cyan;
+    transition: 0.3s linear;
+}
+
+.head h2 p{
+    font-size: 10px;
+    color: cyan;
+}
